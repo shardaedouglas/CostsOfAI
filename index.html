@@ -100,10 +100,10 @@
         <!-- Introduction -->
         <section>
             <p class="mb-6">
-                We exist at a precarious intersection of <strong class="text-white">culture</strong> and <strong class="text-white">technology</strong>. Our society increasingly relies on Artificial Intelligence to protect us from a rapidly changing <strong class="text-white">environment</strong>—using predictive algorithms to manage smart grids, forecast extreme weather, and optimize global logistics. Yet, this technological savior does not operate in a vacuum. 
+                We exist at a precarious intersection of <strong class="text-white">culture</strong> and <strong class="text-white">technology</strong>. Our society increasingly relies on Artificial Intelligence to protect us from a rapidly changing <strong class="text-white">environment</strong>, using predictive algorithms to manage smart grids, forecast extreme weather, and optimize global logistics. Yet, this technological savior does not operate in a vacuum. 
             </p>
             <p>
-                As scholar Kate Crawford notes, "AI is neither artificial nor intelligent... It is made from natural resources, fuel, human labor, infrastructures, logistics, histories, and classifications" (Crawford, 2021). By toggling the computation mode above, this interactive essay demonstrates how our cultural choices regarding AI—whether relying on massive hyper-scale cloud data centers or distributing computation locally to personal hardware—directly impact the fundamental elements of <strong class="text-white">nature</strong>: Fire, Water, Air, and Earth.
+                As scholar Kate Crawford notes, "AI is neither artificial nor intelligent... It is made from natural resources, fuel, human labor, infrastructures, logistics, histories, and classifications" (Crawford, 2021). By toggling the computation mode above, this interactive essay demonstrates how our cultural choices regarding AI (whether relying on massive hyper-scale cloud data centers or distributing computation locally to personal hardware) directly impact the fundamental elements of <strong class="text-white">nature</strong>: Fire, Water, Air, and Earth.
             </p>
             <div class="citation">
                 Crawford, Kate. <i>Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence.</i> Yale University Press, 2021.
@@ -116,6 +116,23 @@
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path></svg>
                 Fire: The Energy Demand
             </h2>
+            
+            <!-- Slideshow Container -->
+            <div class="relative group mb-6">
+                <figure class="relative overflow-hidden rounded-xl shadow-lg h-72">
+                    <img id="fire-slide-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Glowing server racks in a data center" class="w-full h-full object-cover transition-opacity duration-300 ease-in-out">
+                </figure>
+                <figcaption id="fire-slide-caption" class="text-xs text-slate-500 mt-2 italic">Photo by <a href="https://unsplash.com/@ianbattaglia" target="_blank" class="underline hover:text-slate-300">Ian Battaglia</a> on Unsplash</figcaption>
+                
+                <!-- Navigation Arrows -->
+                <button id="fire-prev" class="absolute top-1/2 -translate-y-1/2 left-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Previous image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="fire-next" class="absolute top-1/2 -translate-y-1/2 right-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Next image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+
             <div id="fire-content" class="content-fade">
                 <!-- Content injected via JS -->
             </div>
@@ -127,6 +144,23 @@
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon></svg>
                 Water: The Invisible Coolant
             </h2>
+            
+            <!-- Slideshow Container -->
+            <div class="relative group mb-6">
+                <figure class="relative overflow-hidden rounded-xl shadow-lg h-72">
+                    <img id="water-slide-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVsXt3kieCIOVS2BGehLTefbY6GP0ze5JgSA&s" alt="Data center liquid cooling infrastructure" class="w-full h-full object-cover transition-opacity duration-300 ease-in-out">
+                </figure>
+                <figcaption id="water-slide-caption" class="text-xs text-slate-500 mt-2 italic">Data center liquid cooling infrastructure showing pipes and valves. (Image source: Google Images)</figcaption>
+                
+                <!-- Navigation Arrows -->
+                <button id="water-prev" class="absolute top-1/2 -translate-y-1/2 left-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Previous image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="water-next" class="absolute top-1/2 -translate-y-1/2 right-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Next image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+
             <div id="water-content" class="content-fade">
                 <!-- Content injected via JS -->
             </div>
@@ -138,6 +172,23 @@
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
                 Air: The Atmospheric Toll
             </h2>
+            
+            <!-- Slideshow Container -->
+            <div class="relative group mb-6">
+                <figure class="relative overflow-hidden rounded-xl shadow-lg h-72">
+                    <img id="air-slide-img" src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=800&q=80" alt="Industrial smokestacks emitting smoke into the sky" class="w-full h-full object-cover transition-opacity duration-300 ease-in-out">
+                </figure>
+                <figcaption id="air-slide-caption" class="text-xs text-slate-500 mt-2 italic">Photo by <a href="https://unsplash.com/@marcinjozwiak" target="_blank" class="underline hover:text-slate-300">Marcin Jozwiak</a> on Unsplash</figcaption>
+                
+                <!-- Navigation Arrows -->
+                <button id="air-prev" class="absolute top-1/2 -translate-y-1/2 left-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Previous image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="air-next" class="absolute top-1/2 -translate-y-1/2 right-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Next image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+
             <div id="air-content" class="content-fade">
                  <!-- Content injected via JS -->
             </div>
@@ -149,20 +200,161 @@
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 Earth: Hardware and Extraction
             </h2>
+            
+            <!-- Slideshow Container -->
+            <div class="relative group mb-6">
+                <figure class="relative overflow-hidden rounded-xl shadow-lg h-72">
+                    <img id="earth-slide-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Microchip architecture" class="w-full h-full object-cover transition-opacity duration-300 ease-in-out">
+                </figure>
+                <figcaption id="earth-slide-caption" class="text-xs text-slate-500 mt-2 italic">Photo by <a href="https://unsplash.com/@harrisonbroadbent" target="_blank" class="underline hover:text-slate-300">Harrison Broadbent</a> on Unsplash</figcaption>
+                
+                <!-- Navigation Arrows -->
+                <button id="earth-prev" class="absolute top-1/2 -translate-y-1/2 left-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Previous image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="earth-next" class="absolute top-1/2 -translate-y-1/2 right-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Next image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+
             <div id="earth-content" class="content-fade">
                  <!-- Content injected via JS -->
             </div>
         </section>
 
-        <!-- Conclusion -->
+        <!-- Dynamic Content Section: THE HUMAN ELEMENT -->
         <section class="border-t border-slate-800 pt-12">
-            <h2 class="text-3xl font-bold mb-6 text-white">Conclusion: A Cultural Shift in Technology</h2>
+            <h2 class="text-3xl font-bold mb-6 text-purple-400 flex items-center gap-3">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                The Human Element: Communities & Culture
+            </h2>
+            
+            <!-- Slideshow Container -->
+            <div class="relative group mb-6">
+                <figure class="relative overflow-hidden rounded-xl shadow-lg h-72">
+                    <img id="human-slide-img" src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/5/12/1431430116518/7ba40aaf-6238-4b85-a035-86085ae645c8-2060x1236.jpeg?width=620&dpr=2&s=none&crop=none" alt="Worker searching through dumped electronics" class="w-full h-full object-cover transition-opacity duration-300 ease-in-out">
+                </figure>
+                <figcaption id="human-slide-caption" class="text-xs text-slate-500 mt-2 italic">Worker amidst dumped electronics. Image via <a href="https://www.theguardian.com/environment/2015/may/12/up-to-90-of-worlds-electronic-waste-is-illegally-dumped-says-un" target="_blank" class="underline hover:text-slate-300">The Guardian</a></figcaption>
+                
+                <!-- Navigation Arrows -->
+                <button id="human-prev" class="absolute top-1/2 -translate-y-1/2 left-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Previous image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="human-next" class="absolute top-1/2 -translate-y-1/2 right-2 bg-slate-900/60 hover:bg-slate-900/90 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none backdrop-blur-sm" aria-label="Next image">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+
+            <div id="human-content" class="content-fade">
+                 <!-- Content injected via JS -->
+            </div>
+        </section>
+
+        <!-- Resolution Section -->
+        <section class="border-t border-slate-800 pt-12">
+            <h2 class="text-3xl font-bold mb-6 text-white">Resolution: Towards a Sustainable Digital Culture</h2>
             <p class="mb-4">
-                Our society's understanding of scale is fundamentally mismatched with the realities of nature. Whether we outsource our computation to the invisible "Cloud" or process it on heavy "Local" hardware, the elemental cost remains staggering. The solution is not to abandon technology—AI remains our most potent tool for modeling climate resilience and optimizing resource allocation. 
+                We do not need to abandon Artificial Intelligence to save the climate; rather, we must fundamentally change how we build, deploy, and value it. A sustainable path forward requires shifting our cultural mindset from "technological maximalism" (the belief that bigger models are inherently better) to "conscious computation." 
             </p>
+            <p class="mb-6">
+                To achieve this without stripping society of AI's immense predictive and analytical benefits, we must actively implement cleaner alternatives and systemic changes:
+            </p>
+            <ul class="space-y-4 list-disc pl-6 mb-6">
+                <li><strong class="text-white">Right-Sizing Computation:</strong> Not every problem requires a massive, environmentally expensive Large Language Model (LLM). We can drastically reduce energy consumption by relying on Small Language Models (SLMs) and task-specific algorithms tailored to distinct needs, rather than brute-forcing solutions.</li>
+                <li><strong class="text-white">Adaptive Infrastructure:</strong> Landscape architect Kotchakorn Voraakhom argues that modern cities must stop fighting nature with rigid architecture and instead become "porous" to adapt to shifting climates (Voraakhom, 2020). Digital infrastructure must follow suit. Rather than forcing environmentally hostile data centers into water-stressed regions, tech companies must design "porous" computational networks that harmonize with local ecology—such as Google's initiative to use recycled wastewater (Hölzle, 2022).</li>
+                <li><strong class="text-white">Energy-Aware Scheduling:</strong> Cloud providers must adopt "carbon-aware computing." By scheduling non-urgent AI training sessions during times when local renewable energy grids (like solar and wind) are producing peak excess power, we can decouple AI growth from fossil fuel reliance.</li>
+                <li><strong class="text-white">The Circular Hardware Economy:</strong> To combat the destructive mining and e-waste crisis of local edge computing, society must demand robust Right-to-Repair legislation. Extending the lifespan of a single GPU or server rack by just two years cuts its total environmental footprint nearly in half.</li>
+                <li><strong class="text-white">Algorithmic Transparency:</strong> Just as we have nutritional labels on food, we need ecological labels on digital services. If developers and consumers can see the real-time water and carbon footprint of an AI query, we can culturally incentivize the tech industry to compete on efficiency, rather than just raw processing power.</li>
+            </ul>
             <p>
-                Rather, the solution requires a cultural paradigm shift. The humanities teach us that restraint is a valid and meaningful choice. We must move away from a consumption-based culture that equates bigger AI models with better outcomes, and instead embrace "Responsible AI." This means weighing the ethical and ecological footprint of a technology against its societal benefit, ensuring that our attempts to master our environment do not inadvertently destroy it.
+                Ultimately, resolving the elemental cost of computation requires centering humanity and environmental justice. Technology should serve the community, not exploit it. By acknowledging the physical toll of our digital spaces, we can foster a culture that uses AI not to outrun nature, but to exist in balance with it.
             </p>
+        </section>
+
+        <!-- Bibliography -->
+        <section class="border-t border-slate-800 pt-12">
+            <h2 class="text-2xl font-bold mb-6 text-slate-200">Bibliography</h2>
+            <ul class="space-y-5 text-sm text-slate-400">
+                <li>
+                    <strong class="text-slate-300">AKCP.</strong> "Water Usage for Data Center Cooling and Electricity." <i>AKCP Monitoring Solutions</i>, 10 Aug. 2021, <a href="https://www.akcp.com/index.php/2021/08/10/water-usage-for-data-center-cooling-and-electricity/" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">akcp.com</a>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Baldé, C.P., et al.</strong> <i>The Global E-Waste Monitor 2024.</i> United Nations Institute for Training and Research (UNITAR), 2024.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Crawford, Kate.</strong> <i>Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence.</i> Yale University Press, 2021.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Google.</strong> <i>2023 Environmental Report.</i> Google LLC, 2023.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Hölzle, Urs.</strong> "Our commitment to climate-conscious data center cooling." <i>Google The Keyword</i>, 21 Nov. 2022, <a href="https://blog.google/company-news/outreach-and-initiatives/sustainability/our-commitment-to-climate-conscious-data-center-cooling/" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">blog.google</a>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">International Energy Agency (IEA).</strong> <i>Electricity 2024: Analysis and Forecast to 2026.</i> IEA, Paris, 2024.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Kara, Siddharth.</strong> <i>Cobalt Red: How the Blood of the Congo Powers Our Lives.</i> St. Martin's Press, 2023.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Luccioni, A. S., Viguier, S., & Ligozat, A.-L.</strong> (2023). Estimating the Carbon Footprint of BLOOM, a 176B Parameter Language Model. <i>Journal of Machine Learning Research</i>, 24(253), 1–15.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Lunch, Nick.</strong> "Cultural preservation and climate justice." <i>The Ecologist</i>, 18 Jul. 2019, <a href="https://theecologist.org/2019/jul/18/cultural-preservation-and-climate-justice" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">theecologist.org</a>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Strubell, E., Ganesh, A., & McCallum, A.</strong> (2019). Energy and Policy Considerations for Deep Learning in NLP. <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics.</i>
+                </li>
+                <li>
+                    <strong class="text-slate-300">Voraakhom, Kotchakorn.</strong> "How Can We Better Design Cities To Fight Floods?" <i>NPR TED Radio Hour</i>, 13 Nov. 2020, <a href="https://www.npr.org/2020/11/13/934257652/kotchakorn-voraakhom-how-can-we-better-design-cities-to-fight-floods" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">npr.org</a>.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Image Credits -->
+        <section class="border-t border-slate-800 pt-12">
+            <h2 class="text-2xl font-bold mb-6 text-slate-200">Image Credits</h2>
+            <ul class="space-y-5 text-sm text-slate-400">
+                <li>
+                    <strong class="text-slate-300">Battaglia, Ian.</strong> "Glowing server racks in a data center." <i>Unsplash</i>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Broadbent, Harrison.</strong> "Microchip semiconductor architecture." <i>Unsplash</i>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Brown and Caldwell.</strong> "Data center cooling services." <i>Brown and Caldwell</i>, <a href="https://brownandcaldwell.com/" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">brownandcaldwell.com</a>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">e-Terra.</strong> "Top 20 Countries Used As Dumping Grounds For Your Trash." <i>e-Terra</i>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Fraunhofer IZM.</strong> "Semiconductor reliability components." <i>Fraunhofer IZM Blog</i>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Google Images.</strong> "Data center liquid cooling infrastructure." Included via search query thumbnail.
+                </li>
+                <li>
+                    <strong class="text-slate-300">The Guardian.</strong> "Up to 90% of world's electronic waste is illegally dumped, says UN." 12 May 2015.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Jozwiak, Marcin.</strong> "Industrial smokestacks emitting smoke into the sky." <i>Unsplash</i>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Katusa Research.</strong> "Data Centers, Dead Mines, and the Moment Copper Stops Playing Nice."
+                </li>
+                <li>
+                    <strong class="text-slate-300">Medium.</strong> "Carbon footprint data visualization."
+                </li>
+                <li>
+                    <strong class="text-slate-300">NAACP.</strong> "Pollution from factory smokestacks."
+                </li>
+                <li>
+                    <strong class="text-slate-300">Substack.</strong> "Data center water consumption trends." Via <a href="https://substack.com/" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">substack.com</a>.
+                </li>
+                <li>
+                    <strong class="text-slate-300">Vick, Taylor.</strong> "Cyber security server room." <i>Unsplash</i>.
+                </li>
+            </ul>
         </section>
 
     </main>
@@ -172,23 +364,38 @@
         // Data objects holding the written content for both states
         const contentData = {
             cloud: {
-                fire: `<p>In cloud computing, <strong>Fire</strong> represents the massive, centralized electricity draw of hyper-scale data centers. While cloud AI can act as a savior by optimizing global smart grids to prevent blackouts, the training of these Large Language Models requires unprecedented amounts of electricity. A single data center can consume as much power as a mid-sized city, centralizing the thermal and energetic burden on local municipal grids.</p>`,
+                fire: `<p>In cloud computing, <strong>Fire</strong> represents the massive, centralized electricity draw of hyper-scale data centers. While cloud AI can act as a savior by optimizing global smart grids to prevent blackouts, the training of these Large Language Models requires unprecedented amounts of electricity. The International Energy Agency reported that global data center electricity consumption reached approximately 460 TWh in 2022 and is projected to exceed 1,000 TWh by 2026, roughly equal to the entire electricity consumption of Japan (IEA, 2024). A single data center can consume as much power as a mid-sized city, centralizing the thermal and energetic burden on local municipal grids.</p>
+                      <div class="citation">International Energy Agency (IEA). <i>Electricity 2024: Analysis and Forecast to 2026.</i> IEA, Paris, 2024.</div>`,
                 
-                water: `<p>To tame the 'Fire' of computation, cloud providers rely heavily on <strong>Water</strong>. Massive cooling towers are required to keep server racks from melting down. In many arid regions where data centers are built for cheap land, millions of gallons of potable water are evaporated daily just to maintain our digital infrastructure, directly competing with local society's agricultural and drinking needs.</p>`,
+                water: `<p>To tame the 'Fire' of computation, cloud providers rely heavily on <strong>Water</strong>. Massive cooling towers are required to keep server racks from melting down. According to AKCP, a small 1 MW data center utilizing traditional cooling can consume around 25.5 million liters of water per year. To put the scale into perspective, US data centers consumed an estimated 626 billion liters of water in 2014 alone (AKCP, 2021). Google's own 2023 Environmental Report disclosed that its data centers consumed approximately 5.6 billion gallons of water in 2022, a 20% increase from the prior year, driven largely by the growth of AI workloads (Google, 2023). In many arid regions where data centers are built for cheap land, millions of gallons of potable water are evaporated daily just to maintain our digital infrastructure, directly competing with local society's agricultural and drinking needs.</p>
+                        <div class="citation">AKCP. (2021). Water Usage for Data Center Cooling and Electricity. <i>AKCP Monitoring Solutions.</i></div>
+                        <div class="citation">Google. <i>2023 Environmental Report.</i> Google LLC, 2023.</div>`,
                 
-                air: `<p>The <strong>Air</strong> bears the invisible byproduct of the cloud. Because the cloud is physically located 'somewhere else,' society often ignores its carbon footprint. A landmark 2019 study revealed that training a single, large deep-learning model can emit over 626,000 pounds of CO2—nearly five times the lifetime emissions of an average American car.</p>
-                      <div class="citation">Strubell, E., Ganesh, A., & McCallum, A. (2019). Energy and Policy Considerations for Deep Learning in NLP. <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics.</i></div>`,
+                air: `<p>The <strong>Air</strong> bears the invisible byproduct of the cloud. Because the cloud is physically located 'somewhere else,' society often ignores its carbon footprint. A landmark 2019 study revealed that training a single, large deep-learning model can emit over 626,000 pounds of CO2 equivalent; nearly five times the lifetime emissions of an average American car (Strubell et al., 2019). More recently, researchers at Hugging Face estimated that training the 176-billion parameter BLOOM language model emitted approximately 25 metric tons of CO2 equivalent, underscoring that even with efficiency gains, the atmospheric cost of frontier AI remains substantial (Luccioni et al., 2023).</p>
+                      <div class="citation">Strubell, E., Ganesh, A., & McCallum, A. (2019). Energy and Policy Considerations for Deep Learning in NLP. <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics.</i></div>
+                      <div class="citation">Luccioni, A. S., Viguier, S., & Ligozat, A.-L. (2023). Estimating the Carbon Footprint of BLOOM, a 176B Parameter Language Model. <i>Journal of Machine Learning Research</i>, 24(253), 1–15.</div>`,
                 
-                earth: `<p>The <strong>Earth</strong> impact of the cloud is vast but consolidated. Massive server racks require millions of tons of steel, silicon, and rare earth metals. However, because computation is shared across millions of users, the hardware footprint <i>per user</i> is technically more efficient than everyone owning a supercomputer, representing a unique trade-off between scale and sustainability.</p>`
+                earth: `<p>The <strong>Earth</strong> impact of the cloud is vast but consolidated. Massive server racks require millions of tons of steel, silicon, and rare earth metals. The UN's <i>Global E-Waste Monitor 2024</i> reported that a record 62 million tonnes of e-waste was generated worldwide in 2022, with less than 23% formally recycled (Baldé et al., 2024). However, because cloud computation is shared across millions of users, the hardware footprint <i>per user</i> is technically more efficient than everyone owning a supercomputer, representing a unique trade-off between scale and sustainability.</p>
+                        <div class="citation">Baldé, C.P., et al. <i>The Global E-Waste Monitor 2024.</i> United Nations Institute for Training and Research (UNITAR), 2024.</div>`,
+                
+                human: `<p>The ecological burden of cloud computing is rarely borne by the executives or engineers building the technology. Instead, it falls heavily on rural and marginalized <strong>Communities</strong> where hyper-scale data centers are constructed. As highlighted in discussions of climate justice, environmental destruction inherently threatens cultural preservation (Lunch, 2019). When massive facilities strain local power grids and industrial cooling systems introduce severe noise pollution, they fundamentally alter the local culture and displace community heritage, while the community itself sees little of the technological or financial benefit. Meanwhile, the raw materials powering these servers are extracted under dire conditions: investigative journalist Siddharth Kara documents how artisanal cobalt mining in the Democratic Republic of Congo relies on approximately 40,000 children working in hazardous conditions to fuel the global electronics supply chain (Kara, 2023).</p>
+                        <div class="citation">Lunch, Nick. (2019). Cultural preservation and climate justice. <i>The Ecologist.</i></div>
+                        <div class="citation">Kara, Siddharth. <i>Cobalt Red: How the Blood of the Congo Powers Our Lives.</i> St. Martin's Press, 2023.</div>`
             },
             local: {
                 fire: `<p>When computation shifts to Local Edge AI (processing data on your personal machine or phone), the <strong>Fire</strong> is distributed. While you avoid triggering hyper-scale data center usage, local GPUs require significant personal energy. High-end consumer hardware draws 400 to 600 watts of continuous power under load, turning personal offices into localized heat generators and increasing residential grid strain.</p>`,
                 
-                water: `<p>Interestingly, local computation spares local <strong>Water</strong> ecosystems. Because consumer hardware relies on ambient air cooling or small closed-loop liquid coolers, it does not evaporate millions of gallons of municipal water. The burden is shifted entirely away from the water element, fundamentally changing the ecological footprint of the technology.</p>`,
+                water: `<p>Interestingly, local computation spares local <strong>Water</strong> ecosystems from direct cooling evaporation. Because consumer hardware relies on ambient air cooling or small closed-loop liquid coolers, it does not evaporate millions of gallons of municipal water directly. However, the indirect water footprint remains significant: generating the electricity to power these local machines still consumes water at the power plant level, averaging 7.6 liters of water per 1kWh of energy generated in the US (AKCP, 2021). The burden is shifted, but not entirely erased.</p>
+                        <div class="citation">AKCP. (2021). Water Usage for Data Center Cooling and Electricity. <i>AKCP Monitoring Solutions.</i></div>`,
                 
                 air: `<p>By running models locally, the <strong>Air</strong> impact (carbon emissions) is tied directly to the user's local energy grid. If a user lives in a city powered by hydroelectric or solar energy, running AI locally generates near-zero emissions. However, if the local grid relies on coal, the distributed nature of edge computing still contributes heavily to atmospheric degradation, linking technology directly to local civic infrastructure.</p>`,
                 
-                earth: `<p>The most devastating toll of Local AI is on the <strong>Earth</strong>. If society culturally shifts to everyone running models locally, the demand for personal high-end hardware skyrockets. This drives a massive increase in the mining of lithium, cobalt, and silicon—often in exploited regions of the Global South. Furthermore, rapid hardware obsolescence creates mountains of highly toxic e-waste, cementing our consumer culture's destructive relationship with the physical earth.</p>`
+                earth: `<p>The most devastating toll of Local AI is on the <strong>Earth</strong>. If society culturally shifts to everyone running models locally, the demand for personal high-end hardware skyrockets. This drives a massive increase in the mining of lithium, cobalt, and silicon, often in exploited regions of the Global South. Furthermore, rapid hardware obsolescence creates mountains of highly toxic e-waste. The UN reported a record 62 million tonnes of e-waste generated globally in 2022, with less than 23% formally recycled (Baldé et al., 2024), cementing our consumer culture's destructive relationship with the physical earth.</p>
+                        <div class="citation">Baldé, C.P., et al. <i>The Global E-Waste Monitor 2024.</i> United Nations Institute for Training and Research (UNITAR), 2024.</div>`,
+                
+                human: `<p>The cultural cost of localized, consumer-driven AI is deeply tied to the global supply chain. The insatiable demand for personal GPUs fuels exploitative mining practices. As Siddharth Kara documents, approximately 40,000 children in the Democratic Republic of Congo work in hazardous artisanal cobalt mines that supply the global electronics industry (Kara, 2023). When this hardware inevitably becomes obsolete, it is frequently shipped back to these same developing nations as highly toxic e-waste. This creates a cycle of digital colonialism where wealthy cultures consume the technology, and marginalized <strong>Communities</strong> are forced to absorb the environmental harm, a direct threat to their climate resilience and cultural preservation (Lunch, 2019).</p>
+                        <div class="citation">Kara, Siddharth. <i>Cobalt Red: How the Blood of the Congo Powers Our Lives.</i> St. Martin's Press, 2023.</div>
+                        <div class="citation">Lunch, Nick. (2019). Cultural preservation and climate justice. <i>The Ecologist.</i></div>`
             }
         };
 
@@ -201,11 +408,12 @@
         const waterContent = document.getElementById('water-content');
         const airContent = document.getElementById('air-content');
         const earthContent = document.getElementById('earth-content');
+        const humanContent = document.getElementById('human-content');
 
         // Function to update content with a smooth fade
         function updateContent(state) {
-            const elements = [fireContent, waterContent, airContent, earthContent];
-            const keys = ['fire', 'water', 'air', 'earth'];
+            const elements = [fireContent, waterContent, airContent, earthContent, humanContent];
+            const keys = ['fire', 'water', 'air', 'earth', 'human'];
 
             // Fade out
             elements.forEach(el => {
@@ -240,6 +448,71 @@
 
         // Initialize default content (Cloud)
         updateContent('cloud');
+
+        // --- Refactored Slideshow Logic ---
+        
+        // Data arrays for all the image carousels
+        const fireSlides = [
+            { src: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80", alt: "Glowing server racks", caption: `Photo by <a href="https://unsplash.com/@ianbattaglia" target="_blank" class="underline hover:text-slate-300">Ian Battaglia</a> on Unsplash` },
+            { src: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80", alt: "Cyber security server room", caption: `Photo by <a href="https://unsplash.com/@tvick" target="_blank" class="underline hover:text-slate-300">Taylor Vick</a> on Unsplash` }
+        ];
+
+        const waterSlides = [
+            { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVsXt3kieCIOVS2BGehLTefbY6GP0ze5JgSA&s", alt: "Data center liquid cooling", caption: `Data center liquid cooling infrastructure showing pipes and valves. (Image source: Google Images)` },
+            { src: "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdcaa0508-cccb-40f9-9f68-c32be48fdb26_1720x1062.png", alt: "Data center water consumption trends chart", caption: `Data center water consumption trends. Image via <a href="https://substack.com/" target="_blank" class="underline hover:text-slate-300">Substack</a>` },
+            { src: "https://brownandcaldwell.com/wp-content/uploads/2021/05/Services-Data-Centers-Brown-and-Caldwell-Hero.jpg", alt: "Data center cooling infrastructure", caption: `Data center cooling services. Image via <a href="https://brownandcaldwell.com/" target="_blank" class="underline hover:text-slate-300">Brown and Caldwell</a>` }
+        ];
+
+        const airSlides = [
+            { src: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=800&q=80", alt: "Industrial smokestacks emitting smoke", caption: `Photo by <a href="https://unsplash.com/@marcinjozwiak" target="_blank" class="underline hover:text-slate-300">Marcin Jozwiak</a> on Unsplash` },
+            { src: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*sepRt-In2x7PtUJdw2PxIA.png", alt: "AI carbon footprint visualization", caption: `Carbon footprint data visualization. Image via <a href="https://medium.com/" target="_blank" class="underline hover:text-slate-300">Medium</a>` },
+            { src: "https://naacp.org/sites/default/files/styles/hero_desktop/public/images/Pollution_smoke_factory.jpg.webp?itok=rASulpJ_", alt: "Pollution smoke from factory", caption: `Pollution from factory smokestacks. Image via <a href="https://naacp.org/" target="_blank" class="underline hover:text-slate-300">NAACP</a>` }
+        ];
+
+        const earthSlides = [
+            { src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80", alt: "Microchip architecture", caption: `Photo by <a href="https://unsplash.com/@harrisonbroadbent" target="_blank" class="underline hover:text-slate-300">Harrison Broadbent</a> on Unsplash` },
+            { src: "https://katusaresearch.com/wp-content/uploads/2025/11/Data-Centers-Dead-Mines-and-the-Moment-Copper-Stops-Playing-Nice-696x392.png.webp", alt: "Copper mine and data center illustration", caption: `Data centers and copper mining. Image via <a href="https://katusaresearch.com/" target="_blank" class="underline hover:text-slate-300">Katusa Research</a>` },
+            { src: "https://blog.izm.fraunhofer.de/wp-content/uploads/2021/09/Zuverlassigkeitkomp-740x371.jpg", alt: "Mining electronic component animation", caption: `Electronic hardware components. Image via <a href="https://blog.izm.fraunhofer.de" target="_blank" class="underline hover:text-slate-300">Fraunhofer IZM</a>` }
+        ];
+
+        const humanSlides = [
+            { src: "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/5/12/1431430116518/7ba40aaf-6238-4b85-a035-86085ae645c8-2060x1236.jpeg?width=620&dpr=2&s=none&crop=none", alt: "Worker searching through dumped electronics", caption: `Worker amidst dumped electronics. Image via <a href="https://www.theguardian.com/environment/2015/may/12/up-to-90-of-worlds-electronic-waste-is-illegally-dumped-says-un" target="_blank" class="underline hover:text-slate-300">The Guardian</a>` },
+            { src: "https://atchuup.com/wp-content/uploads/2015/08/ghana-1.jpg", alt: "E-waste burning in Agbogbloshie, Ghana", caption: `Burning e-waste for metal recovery in Ghana. Image via <a href="https://www.eterra.com.ng/system/articles/top-20-countries-dumping-grounds-trash/" target="_blank" class="underline hover:text-slate-300">e-Terra</a>` }
+        ];
+
+        // Reusable function to initialize any slideshow by section prefix
+        function initSlideshow(prefix, slidesArray) {
+            let currentIndex = 0;
+            const imgElement = document.getElementById(`${prefix}-slide-img`);
+            const captionElement = document.getElementById(`${prefix}-slide-caption`);
+            
+            document.getElementById(`${prefix}-prev`).addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + slidesArray.length) % slidesArray.length;
+                updateSlide();
+            });
+
+            document.getElementById(`${prefix}-next`).addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % slidesArray.length;
+                updateSlide();
+            });
+
+            function updateSlide() {
+                imgElement.style.opacity = 0;
+                setTimeout(() => {
+                    imgElement.src = slidesArray[currentIndex].src;
+                    imgElement.alt = slidesArray[currentIndex].alt;
+                    captionElement.innerHTML = slidesArray[currentIndex].caption;
+                    imgElement.style.opacity = 1;
+                }, 300); // 300ms matches the CSS transition duration
+            }
+        }
+
+        // Initialize all carousels
+        initSlideshow('fire', fireSlides);
+        initSlideshow('water', waterSlides);
+        initSlideshow('air', airSlides);
+        initSlideshow('earth', earthSlides);
+        initSlideshow('human', humanSlides);
     </script>
 </body>
 </html>
